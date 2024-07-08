@@ -11,17 +11,18 @@ go get github.com/codescalersinternships/datetime-client-amryassir
 
 ## Usage
 
+Load configuration from environment variables or use default values
+``` go
+config := pkg.LoadConfig()
 ```
 
-// Load configuration from environment variables or use default values
-config := pkg.LoadConfig()
-
-// Initialize a new client instance
+Initialize a new client instance
+``` go
 client := pkg.NewClient(config)
-
-// Get the current date and time from the server
+```
+Get the current date and time from the server
+``` go
 dateTime, err := client.GetDateTime()
-
 ```
 
 ## Testing
